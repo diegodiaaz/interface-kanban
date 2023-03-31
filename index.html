@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +47,26 @@
         </ul>
       </nav>
       <main>
-        <div class="inner"></div>
+        <div class="inner">
+          <section class="title-avatar">
+            <h1>Meu Kanban <img src="./assets/pencil.svg" alt="" /></h1>
+            <img src="https://github.com/diegodiaaz.png" alt="" />
+          </section>
+
+          <section class="filter">
+            <button>
+              <ion-icon name="filter-outline"></ion-icon>
+              <span>Filtrar</span>
+            </button>
+            <div class="input-wrapper">
+              <ion-icon name="search-outline"></ion-icon>
+              <input
+                type="text"
+                placeholder="Busque por cards, assuntos ou responsáveis..."
+              />
+            </div>
+          </section>
+        </div>
       </main>
     </div>
 
