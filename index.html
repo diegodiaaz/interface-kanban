@@ -1,82 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Interface Kanban</title>
-  </head>
-  <body>
-    <div id="app">
-      <nav>
-        <img src="./assets/logo.svg" alt="Logo do Site" class="logo" />
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
 
-        <ul>
-          <li>
-            <a href="#" class="active">
-              <ion-icon name="tablet-portrait"></ion-icon>
-              Boards
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <ion-icon name="people"></ion-icon>
-              Equipes
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <ion-icon name="document-text"></ion-icon>
-              Relatórios
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <ion-icon name="cog"></ion-icon>
-              Ajustes
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <main>
-        <div class="inner">
-          <section class="title-avatar">
-            <h1>Meu Kanban <img src="./assets/pencil.svg" alt="" /></h1>
-            <img src="https://github.com/diegodiaaz.png" alt="" />
-          </section>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Interface Kanban</title>
+</head>
 
-          <section class="filter">
-            <button>
-              <ion-icon name="filter-outline"></ion-icon>
-              <span>Filtrar</span>
-            </button>
-            <div class="input-wrapper">
-              <ion-icon name="search-outline"></ion-icon>
-              <input
-                type="text"
-                placeholder="Busque por cards, assuntos ou responsáveis..."
-              />
+<body>
+  <div id="app">
+    <nav>
+      <img src="./assets/logo.svg" alt="Logo do Site" class="logo" />
+
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <ion-icon name="tablet-portrait"></ion-icon>
+            Boards
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="people"></ion-icon>
+            Equipes
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="document-text"></ion-icon>
+            Relatórios
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="cog"></ion-icon>
+            Ajustes
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="inner">
+        <section class="title-avatar">
+          <h1>Meu Kanban <img src="./assets/pencil.svg" alt="" /></h1>
+          <img src="https://github.com/diegodiaaz.png" alt="" />
+        </section>
+
+        <section class="filter">
+          <button>
+            <ion-icon name="filter-outline"></ion-icon>
+            <span>Filtrar</span>
+          </button>
+          <div class="input-wrapper">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="Busque por cards, assuntos ou responsáveis..." />
+          </div>
+        </section>
+
+        <!-- Section Kanban -->
+        <section class="kanban">
+          <div class="todo">
+            <h2>A fazer</h2>
+            <div class="cards">
+              <div class="card">
+                <h3>#boraCodar Um Kanban</h3>
+                <p> Novos desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban</p>
+                <div class="tags">
+                  <span>rocketseat</span>
+                  <span>dasafio</span>
+                </div>
+              </div>
             </div>
-          </section>
-        </div>
-      </main>
-    </div>
+          </div>
+          <div class="doing">
+            <h2>Fazendo</h2>
+          </div>
+          <div class="done">
+            <h2>Feito</h2>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
