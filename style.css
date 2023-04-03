@@ -209,4 +209,27 @@ section.kanban h2 {
   margin-top: 1rem;
 }
 
-.card .tags {}
+.card .tags {
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+
+  color: #7C3AED;
+  font-weight: 500;
+}
+
+.card .tags span {
+  font-size: 1.1rem;
+  line-height: 130%;
+  background: #E2D6FF;
+  border-radius: .8rem;
+  padding: .4rem .8rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
